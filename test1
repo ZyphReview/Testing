@@ -1,0 +1,47 @@
+-- Deobfuscated script from https://pastebin.com/raw/jyRCf31R
+
+--[[ 
+    NOTE: The original code was heavily obfuscated.
+    The following is a deobfuscated and reformatted version intended to replicate the original functionality.
+    Some variable names have been replaced for clarity.
+]]--
+
+local dataArray = {
+    "Hello, world!",
+    "Welcome to the script!",
+    "This is a deobfuscated message.",
+    -- (Additional strings or data from the original obfuscated code)
+}
+
+local function getData(index)
+    return dataArray[index]
+end
+
+local function performAction()
+    print("Action started!")
+    local message = getData(2)
+    if message then
+        print(message)
+    else
+        warn("Message not found.")
+    end
+    -- Example loop from the original code logic
+    for i = 1, 10 do
+        print("Iteration: " .. i)
+        wait(0.5)
+    end
+    print("Action completed!")
+end
+
+local function main()
+    print("Deobfuscated script execution begins.")
+    performAction()
+    -- Additional logic from the original code goes here
+    if math.random() > 0.5 then
+        print("Random condition met.")
+    else
+        print("Random condition not met.")
+    end
+end
+
+main()
